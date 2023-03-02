@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">section 4 Intent</string>
+    <string name="create_new_contact">Create new contact</string>
+    <string name="contact_application">Contact Application</string>
+    <string name="user_mood_will_appear_here">user mood will appear here</string>
+    <string name="contact_webpage">contact webpage</string>
+    <string name="contact_location">contact location</string>
+    <string name="contact_phone_number">contact phone number</string>
+    <string name="further_contact">Further Contact</string>
+    <string name="fill_all_fields_valid_data">Please fill all fields with a valid data</string>
+    <string name="no_data_passed_through">No data passed through!</string>
+    <string name="new_user_name">user name:</string>
 </resources>

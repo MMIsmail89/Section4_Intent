@@ -7,155 +7,90 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/lightPrimaryColor"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:padding="5dp">
 
     <TextView
-        android:id="@+id/main_tv_explicitIntent"
+        android:id="@+id/main_tv_contactApplication"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:background="#FFC107"
+        android:background="@color/lightPrimaryColor"
         android:gravity="center_horizontal|center_vertical"
-        android:text="explicit_intent"
-        android:textColor="@color/design_default_color_primary"
+        android:text="@string/contact_application"
+        android:textColor="@color/btn_color"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/main_et_name"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:hint="please_enter_your_name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_Activity2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:background="@color/design_default_color_primary"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="activity_2"
-        android:textColor="#FFFF" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_Activity3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:textAllCaps="false"
-        android:textSize="16sp"
-
-        android:background="@color/design_default_color_primary"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="activity_3"
-        android:textColor="#FFFF" />
-
     <TextView
-        android:id="@+id/main_tv_resultFromActivity3"
+        android:id="@+id/main_tv_newContactuserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:background="@color/lightPrimaryColor"
         android:gravity="center_horizontal|center_vertical"
-        android:hint="result_from_activity_3"
-        android:textColor="@color/purple_700" />
-
-    <TextView
-        android:id="@+id/main_tv_implicitIntent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:gravity="center_horizontal|center_vertical"
-        android:text="implicit_intent"
-        android:background="#FFC107"
-        android:textColor="@color/design_default_color_primary"
-        android:textSize="24sp"
+        android:text="@string/contact_application"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/main_iv_userMood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/satisfied"
+        android:contentDescription="@string/user_mood_will_appear_here"/>
+
+    <ImageView
+        android:id="@+id/main_iv_phone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:contentDescription="@string/contact_phone_number"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/main_iv_webPage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/web"
+        android:contentDescription = "@string/contact_webpage"/>
+
+    <ImageView
+        android:id="@+id/main_iv_loction"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/location"
+        android:contentDescription="@string/contact_location"/>
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_call"
+        android:id="@+id/main_btn_createNewContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
 
         android:textAllCaps="false"
-        android:textSize="16sp"
-        android:background="@color/design_default_color_primary"
+        android:textSize="15sp"
+
+        android:background="@color/btn_color"
         android:gravity="center_horizontal|center_vertical"
-        android:text="call"
+        android:text="@string/create_new_contact"
         android:textColor="#FFFF" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_callFriend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:textAllCaps="false"
-        android:textSize="16sp"
-
-        android:background="@color/design_default_color_primary"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="call_friend"
-        android:textColor="#FFFF" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_openWEB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:background="@color/design_default_color_primary"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="open_web"
-        android:textColor="#FFFF" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_btn_openMap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-
-        android:textAllCaps="false"
-        android:textSize="16sp"
-
-        android:background="@color/design_default_color_primary"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="open_MAP"
-        android:textColor="#FFFF" />
-
 </LinearLayout>

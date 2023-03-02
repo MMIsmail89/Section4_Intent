@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPrimaryColor"
+    android:orientation="vertical"
+    tools:context=".createContactActivity"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/main_tv_contactApplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/lightPrimaryColor"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/further_contact"
+        android:textColor="@color/btn_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contact_ed_userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="Please enter user name"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/contact_ed_userPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="Please enter user phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/contact_ed_userPostalAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="Please enter user post address"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/contact_ed_userWebPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+
+        android:gravity="start|center_vertical"
+        android:hint="Please enter user web page"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:id="@+id/contact_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/contact_iv_happy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:clickable="true"
+
+            android:contentDescription="@string/contact_phone_number"
+            app:srcCompat="@drawable/satisfied" />
+
+        <ImageView
+            android:id="@+id/contact_iv_okay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/neutral"
+            android:contentDescription = "@string/contact_webpage"/>
+
+        <ImageView
+            android:id="@+id/contact_iv_sad"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/very_dissatisfied"
+            android:contentDescription="@string/contact_location"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
